@@ -6,28 +6,86 @@
 }
 
 .logog {
-  color: black;
+  color: white;
   font-family: "Delicious Handrawn", cursive;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .navbar-brand {
   background-color: indigo;
   color: wheat;
   font-family: "Dosis", sans-serif;
-  font-size: 40px;
+  font-size: 20px;
   border-radius: 10px;
   padding: 3px, 10px;
+  position: relative;
+}
+
+.navbar-custom {
+  background-color: rgb(139, 64, 139);
+}
+
+.container-portada {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  background-image: url(../assets/imagen/bra-3873760_1920.jpg);
+  background-position: center;
+  background-size: 200%;
+  animation: movimiento 10s linear infinite alternate;
+}
+
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+.container-info {
+  width: 100%;
+  max-width: 700px;
+  background-color: rgba(0, 0, 0, 0.616);
+  position: relative;
+  top: 40px;
+  right: 30px;
+  color: rgb(236, 156, 63);
+  font-family: "Arimo", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50px;
+  float: right;
+}
+.container-info a {
+  background-color: indigo;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-shadow: 0 0 5px black;
+}
+.container-info a:hover {
+  background-color: chocolate;
+}
+
+.pinicio {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.titulo1 {
+  text-transform: uppercase;
 }
 
 body {
-  font-family: "Lobster Two", cursive;
-  background-image: url(../assets/imagen/background-imagen.jpg);
+  font-family: "Dosis", sans-serif;
+  background-image: url(../assets/imagen/beach.jpg);
   background-position: center;
   background-size: cover;
   text-transform: capitalize;
   font-size: 20px;
-  padding-left: 20px;
 }
 
 .nav-item {
@@ -35,12 +93,49 @@ body {
   font-size: 25px;
 }
 
+.container-img {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  background-image: url(../assets/imagen/bannerdeprecios\ \(1\).jpg);
+  background-position: center;
+  background-size: 85%;
+  background-repeat: no-repeat;
+}
+
+.container-img:hover {
+  transition: all 0, 9s;
+  background-size: 100%;
+}
+
 section {
   padding: 20px;
+}
+section h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-size: 30px;
+}
+section h3 {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-size: 30px;
 }
 
 aside {
   padding: 20px;
+}
+aside h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-size: 30px;
+}
+
+.img-costura {
+  background-image: url(../assets/imagen/corteyconfeccion\ \(1\).jpg);
 }
 
 .foto1 {
@@ -77,20 +172,23 @@ aside {
 
 .enviosmapa {
   position: relative;
-  left: 10px;
+  left: 20px;
 }
 
 .foo {
+  background-color: rgb(139, 64, 139);
+  font-family: "Anton", sans-serif;
+  padding-top: 20px;
+  width: auto;
+  height: 150px;
   text-align: center;
-  background-color: burlywood;
-  color: black;
   font-size: 20px;
-  padding: 20px;
 }
 
-.redes {
-  font-size: 50px;
+footer i {
+  font-size: 40px;
   letter-spacing: 10px;
+  color: #000;
 }
 
 footer i:hover {

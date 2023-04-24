@@ -6,11 +6,29 @@ $tono3: 'Anton', sans-serif;
 $tono4: 'Barlow Condensed', sans-serif;
 $tono5: 'Dosis', sans-serif;
 $tono6: 'Delicious Handrawn', cursive;
+$tono7: 'Arimo', sans-serif;
+$tono8: 'Fugaz One', cursive;
+$tono9: 'Genos', sans-serif;
+$tono10: 'Kaushan Script', cursive;
+
 
 $color1: indigo;
 $color2: chocolate;
 $color3: green;
+$color4: magenta;
+$color5: black;
+$color6: rgb(236, 156, 63);
+$color7: white;
 
+
+
+
+$size1: 20px;
+$size2: 30px;
+$size3: 40px;
+$size4: 50px;
+$size5: 100px;
+$size6: 150px;
 
 
 
@@ -21,30 +39,91 @@ $color3: green;
 }
 
 .logog {
-  color: black;
+  color: white;
   font-family: $tono6;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .navbar-brand {
   background-color: $color1;
   color: wheat;
   font-family: $tono5;
-  font-size: 40px;
+  font-size: 20px;
   border-radius: 10px;
   padding: 3px, 10px;
+  position: relative;
+}
+
+.navbar-custom {
+  background-color: rgb(139, 64, 139);
+}
+
+.container-portada {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  background-image: url(../assets/imagen/bra-3873760_1920.jpg);
+  background-position: center;
+  background-size: 200%;
+  animation: movimiento 10s linear infinite alternate;
+}
+
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+
+  to {
+    background-position: top right;
+  }
+}
+
+.container-info {
+  width: 100%;
+  max-width: 700px;
+  background-color: rgba(0, 0, 0, 0.616);
+  position: relative;
+  top: $size3;
+  right: $size2;
+  color: $color6;
+  font-family: $tono7;
+  font-size: $size1;
+  text-align: center;
+  border-radius: 50px;
+  float: right;
+     a {
+      background-color: $color1;
+      color: $color7;
+      padding: 10px $size2;
+      border-radius: 50px;
+      text-decoration: none;
+      text-shadow: 0 0 5px $color5;
+  
+     }
+     a:hover {
+      background-color: $color2;
+     }
 
 }
 
+.pinicio {
+  text-align: center;
+  color: $color7;
+  margin-bottom: $size2;
+
+}
+
+.titulo1 {
+  text-transform: uppercase;
+}
+
 body {
-  font-family: $tono2;
-  background-image: url(../assets/imagen/background-imagen.jpg
-);
+  font-family: $tono5;
+  background-image: url(../assets/imagen/beach.jpg);
   background-position: center;
   background-size: cover;
   text-transform: capitalize;
-  font-size: 20px;
-  padding-left: 20px;
+  font-size: $size1;
 
 }
 
@@ -53,12 +132,49 @@ body {
   font-size: 25px;
 }
 
-section {
-  padding: 20px;
+.container-img {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  background-image: url(../assets/imagen/bannerdeprecios\ \(1\).jpg);
+  background-position: center;
+  background-size: 85%;
+  background-repeat: no-repeat;
+}
+.container-img:hover {
+  transition: all 0,9s;
+  background-size: 100%;
+}
+section { 
+  padding: $size1;
+
+  h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-family: $tono7;
+    font-size: $size2
+  }
+  h3 {
+    text-transform: capitalize;
+    text-align: center;
+    font-family: $tono7;
+    font-size: $size2;
+  }
 }
 
+
 aside {
-  padding: 20px;
+  padding: $size1;
+
+  h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-family: $tono7;
+    font-size: $size2;
+  }
+}
+.img-costura {
+  background-image: url(../assets/imagen/corteyconfeccion\ \(1\).jpg);
 }
 
 .foto1 {
@@ -90,29 +206,37 @@ aside {
   width: 40%;
   height: 300px;
   position: fixed;
-  left: 50px;
+  left: $size4;
 }
 
 .enviosmapa {
   position: relative;
-  left: 10px;
+  left: $size1;
 }
 
 .foo {
+  background-color: rgb(139, 64, 139);
+  font-family: $tono3;
+  padding-top: $size1;
+  width: auto;
+  height: 150px;
   text-align: center;
-  background-color: burlywood;
-  color: black;
-  font-size: 20px;
-  padding: 20px;
+  font-size: $size1;
+
+
 
 }
-.redes {
-    font-size: 50px;
-    letter-spacing: 10px;
+
+footer i {
+  font-size: $size3;
+  letter-spacing: 10px;
+  color: #000;
+
 }
-footer i:hover{
-  color: $color2;
-}  
+
+footer i:hover {
+  color: $color2
+}
 
 
 /*# sourceMappingURL=style.css.map */
