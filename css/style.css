@@ -9,6 +9,7 @@
   color: white;
   font-family: "Delicious Handrawn", cursive;
   font-size: 30px;
+  text-shadow: 0 0 6px black;
 }
 
 .navbar-brand {
@@ -50,8 +51,9 @@
   position: relative;
   top: 40px;
   right: 30px;
-  color: rgb(236, 156, 63);
-  font-family: "Arimo", sans-serif;
+  color: magenta;
+  text-shadow: 0 0 7px indigo;
+  font-family: "Dosis", sans-serif;
   font-size: 20px;
   text-align: center;
   border-radius: 50px;
@@ -111,76 +113,212 @@ body {
 section {
   padding: 20px;
 }
-section h2 {
-  text-transform: capitalize;
-  text-align: center;
-  font-family: "Arimo", sans-serif;
-  font-size: 30px;
+section h2, section h3 {
+  font-family: "Anton", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  text-shadow: 0 0 7px indigo;
 }
-section h3 {
-  text-transform: capitalize;
-  text-align: center;
-  font-family: "Arimo", sans-serif;
-  font-size: 30px;
-}
-
 aside {
   padding: 20px;
 }
-aside h2 {
-  text-transform: capitalize;
+aside h2, aside section h3, section aside h3 {
+  font-family: "Anton", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  text-shadow: 0 0 7px indigo;
+}
+
+.contenedor-contacto {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-image: url(../assets/imagen/contactos.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: 200%;
+  animation: mover 10s linear infinite alternate;
+}
+.contenedor-contacto h1 {
+  font-family: "Anton", sans-serif;
+  color: white;
+  font-size: 50px;
+  text-shadow: 0 0 7px black;
+}
+.contenedor-contacto p {
+  font-family: "Dosis", sans-serif;
   text-align: center;
-  font-family: "Arimo", sans-serif;
+  text-shadow: 0 0 5px white;
+  font-size: 25px;
+  color: black;
+}
+.contenedor-contacto ul li {
+  font-family: "Anton", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 0 7px black;
+}
+
+@keyframes mover {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+.ubi .contactosh {
+  font-family: "Anton", sans-serif;
+  color: black;
   font-size: 30px;
+  text-transform: capitalize;
+  text-shadow: 0 0 6px indigo;
+  padding: 10px 10px 20px;
+}
+.ubi p {
+  font-family: "Anton", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  text-shadow: 0 0 7px indigo;
+  padding: 10px 10px 10px;
 }
 
-.img-costura {
-  background-image: url(../assets/imagen/corteyconfeccion\ \(1\).jpg);
+.container-galeria {
+  padding: 20px 20px;
+}
+.container-galeria .galeriah {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: black;
+  text-shadow: 0 0 5px indigo;
+}
+.container-galeria .grid {
+  display: grid;
+  max-width: 1100px;
+  justify-content: center;
+  margin: auto;
+  gap: 50px;
+  grid-template-columns: repeat(4, 280px);
+}
+.container-galeria .items {
+  background-color: black;
+  border: solid thin #e1e1e1;
+}
+.container-galeria .items img {
+  width: 100%;
+  height: 280px;
+}
+.container-galeria .info {
+  padding: 15px;
+}
+.container-galeria .gh3 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: indigo;
+}
+.container-galeria .pg {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.container-galeria .bg {
+  padding: 15px;
+  background-color: indigo;
+  border: none;
+  outline: none;
+  color: #e1e1e1;
+  text-transform: uppercase;
+  border-radius: 50px;
 }
 
-.foto1 {
-  width: 400px;
-  height: 400px;
+.nota {
+  padding: 30px;
+  font-size: 20px;
+  color: #000;
 }
 
-.foto2 {
-  width: 400px;
-  height: 400px;
+.form1 {
+  width: 100%;
+  padding-left: 20px;
+  max-width: 1300px;
+  background-color: chocolate;
+  padding-bottom: 10px;
+}
+.form1 .eh1 {
+  font-family: "Anton", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: black;
+  text-shadow: 0 0 5px indigo;
+}
+.form1 .eh2 {
+  font-family: "Anton", sans-serif;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: black;
+  text-shadow: 0 0 5px indigo;
 }
 
-.foto3 {
-  width: 400px;
-  height: 400px;
-}
-
-.foto4 {
-  width: 400px;
-  height: 400px;
-}
-
-.foto5 {
-  width: 400px;
-  height: 400px;
+.eh3 {
+  font-family: "Anton", sans-serif;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: black;
+  text-shadow: 0 0 5px indigo;
 }
 
 .envios {
   width: 40%;
   height: 300px;
-  position: fixed;
-  left: 50px;
+  left: 40px;
 }
 
 .enviosmapa {
-  position: relative;
-  left: 20px;
+  padding: 10px;
+}
+
+.form2 {
+  background-color: chocolate;
+  text-align: start;
+  padding: 10px;
+}
+.form2 .ih1 {
+  font-family: "Anton", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: black;
+  text-shadow: 0 0 5px indigo;
+}
+
+.h2i {
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: black;
+  text-shadow: 0 0 5px indigo;
+}
+
+.pp {
+  font-size: 20px;
+  font-family: "Titan One", cursive;
+  padding: 30px;
 }
 
 .foo {
-  background-color: rgb(139, 64, 139);
-  font-family: "Anton", sans-serif;
-  padding-top: 20px;
   width: auto;
   height: 150px;
+  font-family: "Anton", sans-serif;
+  background-color: rgb(139, 64, 139);
+  padding-top: 20px;
   text-align: center;
   font-size: 20px;
 }
