@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logog {
   color: white;
   font-family: "Delicious Handrawn", cursive;
@@ -187,7 +191,7 @@ aside h2, aside section h3, section aside h3 {
 }
 
 .container-galeria {
-  padding: 20px 20px;
+  padding: 30px 10px;
 }
 .container-galeria .galeriah {
   text-align: center;
@@ -244,7 +248,7 @@ aside h2, aside section h3, section aside h3 {
 .form1 {
   width: 100%;
   padding-left: 20px;
-  max-width: 1300px;
+  max-width: 1400px;
   background-color: chocolate;
   padding-bottom: 10px;
 }
@@ -333,6 +337,200 @@ footer i:hover {
   color: chocolate;
 }
 
+.subir {
+  width: magenta;
+  height: 50px;
+  background-color: indigo;
+  color: white;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.whatsapp {
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .contenedor-contacto ul li {
+    font-family: "Anton", sans-serif;
+    margin-top: -10px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px black;
+    position: relative;
+    bottom: 20px;
+    right: 30px;
+    list-style-type: none;
+  }
+  .container-galeria {
+    padding: 30px 10px;
+  }
+  .container-galeria .grid {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    grid-template-columns: repeat(3, 280px);
+  }
+  .enviosmapa {
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .nav-link {
+    font-size: 20px;
+    text-shadow: none;
+  }
+  section {
+    padding: 20px;
+  }
+  section h2, section h3 {
+    font-family: "Anton", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px indigo;
+    font-size: 20px;
+  }
+  aside {
+    padding: 20px;
+  }
+  aside h2, aside section h3, section aside h3 {
+    font-family: "Anton", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px indigo;
+    font-size: 20px;
+  }
+  .contenedor-contacto h1 {
+    font-size: 30px;
+    padding-right: 50px;
+  }
+  .contenedor-contacto p {
+    font-size: 20px;
+    font-family: "Anton", sans-serif;
+    text-align: center;
+  }
+  .contenedor-contacto ul li {
+    font-family: "Barlow Condensed", sans-serif;
+    color: white;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    text-transform: capitalize;
+    text-shadow: 0 0 7px black;
+    font-size: 20px;
+  }
+  .container-galeria {
+    padding: 30px 10px;
+  }
+  .container-galeria .grid {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    gap: 50px;
+    grid-template-columns: repeat(2, 280px);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container-info {
+    background-color: rgba(0, 0, 0, 0.616);
+    position: relative;
+    right: 5px;
+    left: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  iframe {
+    width: 500px;
+  }
+  .container-galeria .grid {
+    gap: 20px;
+  }
+  aside .enviosmapa {
+    width: 500px;
+  }
+  img {
+    width: 500px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contenedor-contacto h1 {
+    font-size: 30px;
+    position: relative;
+    right: 30px;
+    padding-right: 20px;
+  }
+  .contenedor-contacto p {
+    font-size: 20px;
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+  }
+  .contenedor-contacto ul li {
+    font-family: "Barlow Condensed", sans-serif;
+    color: white;
+    font-size: 17px;
+    text-shadow: 0 0 6px black;
+  }
+  aside iframe {
+    width: 400px;
+  }
+  .container-galeria .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 280px);
+  }
+  aside .enviosmapa {
+    width: 400px;
+  }
+  img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .contenedor-contacto h1 {
+    font-size: 20px;
+    position: relative;
+    right: 40px;
+  }
+  .contenedor-contacto p {
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    position: relative;
+    right: 60px;
+  }
+  .contenedor-contacto ul li {
+    font-family: "Barlow Condensed", sans-serif;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    bottom: 30px;
+    left: -50px;
+    list-style-type: none;
+  }
+  aside iframe {
+    width: 250px;
+    height: 250px;
+  }
+  aside .enviosmapa {
+    width: 250px;
+  }
+  img {
+    width: 250px;
+    height: 250px;
+  }
+}
 
 
 /*# sourceMappingURL=style.css.map */

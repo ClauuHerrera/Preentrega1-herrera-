@@ -20,7 +20,7 @@ $color5: black;
 $color6: rgb(236, 156, 63);
 $color7: white;
 
-
+$size0: 10px;
 $size1: 20px;
 $size2: 30px;
 $size3: 40px;
@@ -29,30 +29,37 @@ $size5: 100px;
 $size6: 150px;
 
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 .logog {
   color: white;
   font-family: $tono6;
-  font-size: 30px;
+  font-size: $size2;
   text-shadow: 0 0 6px $color5;
 }
+
 .navbar-brand {
   background-color: $color1;
   color: wheat;
   font-family: $tono5;
-  font-size: 20px;
-  border-radius: 10px;
-  padding: 3px, 10px;
+  font-size: $size1;
+  border-radius: $size0;
+  padding: 3px, $size0;
   position: relative;
 }
+
 .navbar-custom {
   background-color: rgb(139, 64, 139);
 }
+
 .container-portada {
   width: 100%;
   height: 300px;
@@ -62,6 +69,7 @@ $size6: 150px;
   background-size: 200%;
   animation: movimiento 10s linear infinite alternate;
 }
+
 @keyframes movimiento {
   from {
     background-position: bottom left;
@@ -71,6 +79,7 @@ $size6: 150px;
     background-position: top right;
   }
 }
+
 .container-info {
   width: 100%;
   max-width: 700px;
@@ -83,29 +92,34 @@ $size6: 150px;
   font-family: $tono5;
   font-size: $size1;
   text-align: center;
-  border-radius: 50px;
+  border-radius: $size4;
   float: right;
+
   a {
     background-color: $color1;
     color: $color7;
-    padding: 10px $size2;
-    border-radius: 50px;
+    padding: $size0 $size2;
+    border-radius: $size4;
     text-decoration: none;
     text-shadow: 0 0 5px $color5;
 
   }
+
   a:hover {
     background-color: $color2;
   }
 }
+
 .pinicio {
   text-align: center;
   color: $color7;
   margin-bottom: $size2;
 }
+
 .titulo1 {
   text-transform: uppercase;
 }
+
 body {
   font-family: $tono5;
   background-image: url(../assets/imagen/beach.jpg);
@@ -115,10 +129,12 @@ body {
   font-size: $size1;
 
 }
+
 .nav-item {
   font-family: $tono3;
   font-size: 25px;
 }
+
 .container-img {
   width: 100%;
   height: 200px;
@@ -128,22 +144,27 @@ body {
   background-size: 85%;
   background-repeat: no-repeat;
 }
+
 .container-img:hover {
   transition: all 0, 9s;
   background-size: 100%;
 }
+
 section {
   padding: $size1;
+
   h2 {
     font-family: $tono3;
     color: $color5;
     text-transform: uppercase;
     text-shadow: 0 0 7px $color1;
   }
+
   h3 {
     @extend h2;
   }
 }
+
 aside {
   padding: $size1;
 
@@ -154,24 +175,27 @@ aside {
     text-shadow: 0 0 7px $color1;
   }
 }
+
 .contenedor-contacto {
   width: 100%;
   height: 200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: $size4;
   background-image: url(../assets/imagen/contactos.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: 200%;
   animation: mover 10s linear infinite alternate;
+
   h1 {
     font-family: $tono3;
     color: $color7;
-    font-size: 50px;
+    font-size: $size4;
     text-shadow: 0 0 7px $color5;
   }
+
   p {
     font-family: $tono5;
     text-align: center;
@@ -179,6 +203,7 @@ aside {
     font-size: 25px;
     color: $color5;
   }
+
   ul li {
     font-family: $tono3;
     color: $color7;
@@ -186,6 +211,7 @@ aside {
     text-shadow: 0 0 7px $color5;
   }
 }
+
 @keyframes mover {
   from {
     background-position: bottom left;
@@ -195,6 +221,7 @@ aside {
     background-position: top right;
   }
 }
+
 .ubi {
   .contactosh {
     font-family: $tono3;
@@ -202,155 +229,432 @@ aside {
     font-size: $size2;
     text-transform: capitalize;
     text-shadow: 0 0 6px $color1;
-    padding: 10px 10px 20px;
+    padding: $size0 $size0 $size1;
   }
+
   p {
     font-family: $tono3;
     color: $color5;
     text-transform: uppercase;
     text-shadow: 0 0 7px $color1;
-    padding: 10px 10px 10px;
+    padding: $size0 $size0 $size0;
   }
 }
+
 .container-galeria {
-  padding: 20px 20px;
+  padding: $size2 $size0;
+
   .galeriah {
     text-align: center;
     text-transform: uppercase;
     font-family: $tono3;
-    margin-bottom: 20px;
+    margin-bottom: $size1;
     font-size: $size2;
     color: $color5;
     text-shadow: 0 0 5px $color1;
   }
+
   .grid {
     display: grid;
     max-width: 1100px;
     justify-content: center;
     margin: auto;
-    gap: 50px;
-    grid-template-columns: repeat(4,280px);
-    }
+    gap: $size4;
+    grid-template-columns: repeat(4, 280px);
+  }
+
   .items {
     background-color: $color5;
     border: solid thin #e1e1e1;
-  } 
+  }
+
   .items img {
     width: 100%;
     height: 280px;
   }
+
   .info {
     padding: 15px;
   }
+
   .gh3 {
     font-family: $tono4;
     color: $color1;
   }
+
   .pg {
     color: $color7;
     font-family: $tono4;
   }
+
   .bg {
     padding: 15px;
     background-color: $color1;
     border: none;
     outline: none;
     color: #e1e1e1;
-    text-transform:uppercase;
-    border-radius: 50px;
+    text-transform: uppercase;
+    border-radius: $size4;
   }
-} 
+}
+
 .nota {
   padding: $size2;
   font-size: $size1;
-  color:#000;
+  color: #000;
 }
+
 .form1 {
   width: 100%;
-  padding-left: 20px;
-  max-width: 1300px;
+  padding-left: $size1;
+  max-width: 1400px;
   background-color: $color2;
-  padding-bottom: 10px;
+  padding-bottom: $size0;
+
   .eh1 {
     font-family: $tono3;
     font-size: $size2;
     text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: $size0;
+    margin-bottom: $size1;
     color: $color5;
     text-shadow: 0 0 5px $color1;
   }
+
   .eh2 {
     font-family: $tono3;
-    margin-bottom: 20px;
+    margin-bottom: $size1;
     font-size: $size1;
     color: $color5;
     text-shadow: 0 0 5px $color1;
   }
 }
+
 .eh3 {
   font-family: $tono3;
-  margin-bottom: 20px;
+  margin-bottom: $size1;
   font-size: $size2;
   color: $color5;
   text-shadow: 0 0 5px $color1;
-  }
+}
+
 .envios {
   width: 40%;
   height: 300px;
   left: $size3;
 }
+
 .enviosmapa {
-padding: 10px;
+  padding: $size0;
 }
+
 .form2 {
   background-color: $color2;
   text-align: start;
-  padding: 10px;
+  padding: $size0;
+
   .ih1 {
     font-family: $tono3;
     font-size: $size2;
     text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: $size0;
+    margin-bottom: $size1;
     color: $color5;
     text-shadow: 0 0 5px $color1;
   }
 }
+
 .h2i {
   font-family: $tono3;
-    font-size: $size1;
-    padding: 10px;
-    margin-bottom: 20px;
-    color: $color5;
-    text-shadow: 0 0 5px $color1;
+  font-size: $size1;
+  padding: $size0;
+  margin-bottom: $size1;
+  color: $color5;
+  text-shadow: 0 0 5px $color1;
 }
+
 .pp {
   font-size: $size1;
   font-family: $tono1;
   padding: $size2;
 }
-@mixin foo ($width, $height, $font-family){
+
+@mixin foo ($width, $height, $font-family) {
   width: $width;
   height: $height;
   font-family: $font-family;
 }
 
 .foo {
-  @include foo (auto , 150px , $tono3);
+  @include foo (auto, 150px, $tono3);
   background-color: rgb(139, 64, 139);
   padding-top: $size1;
   text-align: center;
   font-size: $size1;
 }
+
 footer i {
   font-size: $size3;
-  letter-spacing: 10px;
+  letter-spacing: $size0;
   color: #000;
 }
+
 footer i:hover {
   color: $color2
 }
 
+.subir {
+  width: $color4;
+  height: $size4;
+  background-color: $color1;
+  color: $color7;
+  position: fixed;
+  bottom: $size3;
+  right: $size3;
+  text-align: center;
+  font-size: $size2;
+  line-height: $size4;
+  border-radius: 50%;
+  border: 5px solid $color7;
+}
+
+.whatsapp {
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  bottom: 80px;
+  right: $size0;
+}
+
+@media only screen and (max-width:1100px) {
+  .contenedor-contacto {
+
+    ul li {
+      font-family: $tono3;
+      margin-top: -10px;
+      color: $color7;
+      text-transform: uppercase;
+      text-shadow: 0 0 7px $color5;
+      position: relative;
+      bottom: $size1;
+      right: $size2;
+      list-style-type: none;
+    }
+  }
+
+  .container-galeria {
+    padding: $size2 $size0;
+
+    .grid {
+      display: grid;
+      justify-content: center;
+      margin: auto;
+      gap: $size1;
+      grid-template-columns: repeat(3, 280px);
+    }
+  }
+
+  .enviosmapa {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .nav-link {
+    font-size: $size1;
+    text-shadow: none;
+  }
+
+  section {
+    padding: $size1;
+
+    h2 {
+      font-family: $tono3;
+      color: $color5;
+      text-transform: uppercase;
+      text-shadow: 0 0 7px $color1;
+      font-size: $size1;
+    }
+
+    h3 {
+      @extend h2;
+    }
+  }
+
+  aside {
+    padding: $size1;
+
+    h2 {
+      font-family: $tono3;
+      color: $color5;
+      text-transform: uppercase;
+      text-shadow: 0 0 7px $color1;
+      font-size: $size1;
+    }
+  }
+
+  .contenedor-contacto {
+    h1 {
+      font-size: $size2;
+      padding-right: $size4;
+    }
+
+    p {
+      font-size: $size1;
+      font-family: $tono3;
+      text-align: center;
+    }
+
+    ul li {
+      font-family: $tono4;
+      color: $color7;
+      position: relative;
+      bottom: $size1;
+      left: $size1;
+
+      text-transform: capitalize;
+      text-shadow: 0 0 7px $color5;
+      font-size: $size1;
+    }
+  }
+
+  .container-galeria {
+    padding: $size2 $size0;
+
+    .grid {
+      display: grid;
+      justify-content: center;
+      margin: auto;
+      gap: $size4;
+      grid-template-columns: repeat(2, 280px);
+    }
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .container-info {
+
+    background-color: rgba(0, 0, 0, 0.616);
+    position: relative;
+    right: 5px;
+    left: 5px;
+    font-size: $size1;
+    border-radius: $size0;
+  }
+
+  iframe {
+    width: 500px;
+  }
+
+  .container-galeria {
+    .grid {
+      gap: $size1;
+    }
+  }
+
+  aside {
+    .enviosmapa {
+      width: 500px;
+    }
+  }
+
+  img {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .contenedor-contacto {
+    h1 {
+      font-size: $size2;
+      position: relative;
+      right: $size2;
+      padding-right: $size1;
+    }
+
+    p {
+      font-size: $size1;
+      position: relative;
+      bottom: $size2;
+      right: $size2;
+    }
+
+    ul li {
+      font-family: $tono4;
+      color: $color7;
+      font-size: 17px;
+      text-shadow: 0 0 6px $color5;
+    }
+  }
+
+  aside {
+    iframe {
+      width: 400px;
+    }
+  }
+
+  .container-galeria {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(1, 280px);
+    }
+  }
+
+  aside {
+    .enviosmapa {
+      width: 400px;
+    }
+  }
+
+  img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .contenedor-contacto {
+    h1 {
+      font-size: $size1;
+      position: relative;
+      right: $size3;
+    }
+
+    p {
+      font-family: $tono5;
+      font-size: 15px;
+      position: relative;
+      right: 60px;
+
+    }
+
+    ul li {
+      font-family: $tono4;
+      color: $color7;
+      font-size: 15px;
+      position: relative;
+      bottom: $size2;
+      left: -50px;
+      list-style-type: none;
+    }
+  }
+    aside {
+      iframe {
+        width: 250px;
+        height: 250px;
+      }
+    }
+    aside {
+      .enviosmapa {
+        width: 250px;
+      }
+    }
+  
+    img {
+      width: 250px;
+      height: 250px;
+    }  
+}
 
 /*# sourceMappingURL=style.css.map */
