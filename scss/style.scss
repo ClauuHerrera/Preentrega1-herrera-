@@ -204,11 +204,14 @@ aside {
     color: $color5;
   }
 
-  ul li {
+  .pu {
     font-family: $tono3;
+    font-size: $size1;
     color: $color7;
     text-transform: uppercase;
     text-shadow: 0 0 7px $color5;
+    position: relative;
+    bottom: $size3;
   }
 }
 
@@ -428,20 +431,16 @@ footer i:hover {
 
 @media only screen and (max-width:1100px) {
   .contenedor-contacto {
-
-    ul li {
+    .pu {
       font-family: $tono3;
-      margin-top: -10px;
+      font-size: $size1;
       color: $color7;
       text-transform: uppercase;
       text-shadow: 0 0 7px $color5;
       position: relative;
-      bottom: $size1;
-      right: $size2;
-      list-style-type: none;
-    }
+      bottom: $size3;
+    } 
   }
-
   .container-galeria {
     padding: $size2 $size0;
 
@@ -459,12 +458,12 @@ footer i:hover {
   }
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (min-width:800px) 
+and (max-width:1100px) {
   .nav-link {
     font-size: $size1;
     text-shadow: none;
   }
-
   section {
     padding: $size1;
 
@@ -503,18 +502,18 @@ footer i:hover {
       font-size: $size1;
       font-family: $tono3;
       text-align: center;
-    }
-
-    ul li {
-      font-family: $tono4;
-      color: $color7;
       position: relative;
-      bottom: $size1;
-      left: $size1;
-
-      text-transform: capitalize;
-      text-shadow: 0 0 7px $color5;
+      bottom: $size3;
+    }
+    .pu {
+      font-family: $tono3;
       font-size: $size1;
+      color: $color7;
+      text-transform: uppercase;
+      text-shadow: 0 0 7px $color5;
+      position: relative;
+      bottom: $size3;
+      left: $size2;
     }
   }
 
@@ -531,7 +530,8 @@ footer i:hover {
   }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (min-width:600px)
+and (max-width:800px) {
   .container-info {
 
     background-color: rgba(0, 0, 0, 0.616);
@@ -564,27 +564,36 @@ footer i:hover {
   }
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (min-width:480px)and
+(max-width:600px) {
+
+  .navbar-brand {
+    max-width: 320px;
+  }
   .contenedor-contacto {
     h1 {
       font-size: $size2;
       position: relative;
       right: $size2;
+      top: $size2;
       padding-right: $size1;
     }
 
     p {
       font-size: $size1;
       position: relative;
-      bottom: $size2;
-      right: $size2;
+      bottom: $size1;
+      right: $size0;
     }
-
-    ul li {
-      font-family: $tono4;
+    .pu {
+      font-family: $tono3;
+      font-size: $size0;
       color: $color7;
-      font-size: 17px;
-      text-shadow: 0 0 6px $color5;
+      text-transform: uppercase;
+      text-shadow: 0 0 7px $color5;
+      position: relative;
+      left: $size1;
+      top: $size0;
     }
   }
 
@@ -613,7 +622,8 @@ footer i:hover {
   }
 }
 
-@media only screen and (max-width:320px) {
+@media only screen and (min-width:320px) 
+ and (max-width:480px) {
   .contenedor-contacto {
     h1 {
       font-size: $size1;
@@ -625,19 +635,22 @@ footer i:hover {
       font-family: $tono5;
       font-size: 15px;
       position: relative;
-      right: 60px;
+      right: $size4;
+      top: $size1;
 
     }
-
-    ul li {
-      font-family: $tono4;
+    .pu {
+      font-family: $tono3;
+      font-size: $size0;
       color: $color7;
-      font-size: 15px;
+      text-transform: uppercase;
+      text-shadow: 0 0 7px $color5;
       position: relative;
-      bottom: $size2;
-      left: -50px;
-      list-style-type: none;
+      top: $size1;
+      
+      
     }
+    
   }
     aside {
       iframe {

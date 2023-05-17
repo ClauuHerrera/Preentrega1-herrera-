@@ -159,11 +159,14 @@ aside h2, aside section h3, section aside h3 {
   font-size: 25px;
   color: black;
 }
-.contenedor-contacto ul li {
+.contenedor-contacto .pu {
   font-family: "Anton", sans-serif;
+  font-size: 20px;
   color: white;
   text-transform: uppercase;
   text-shadow: 0 0 7px black;
+  position: relative;
+  bottom: 40px;
 }
 
 @keyframes mover {
@@ -361,16 +364,14 @@ footer i:hover {
 }
 
 @media only screen and (max-width: 1100px) {
-  .contenedor-contacto ul li {
+  .contenedor-contacto .pu {
     font-family: "Anton", sans-serif;
-    margin-top: -10px;
+    font-size: 20px;
     color: white;
     text-transform: uppercase;
     text-shadow: 0 0 7px black;
     position: relative;
-    bottom: 20px;
-    right: 30px;
-    list-style-type: none;
+    bottom: 40px;
   }
   .container-galeria {
     padding: 30px 10px;
@@ -386,7 +387,7 @@ footer i:hover {
     width: 800px;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
   .nav-link {
     font-size: 20px;
     text-shadow: none;
@@ -419,16 +420,18 @@ footer i:hover {
     font-size: 20px;
     font-family: "Anton", sans-serif;
     text-align: center;
-  }
-  .contenedor-contacto ul li {
-    font-family: "Barlow Condensed", sans-serif;
-    color: white;
     position: relative;
-    bottom: 20px;
-    left: 20px;
-    text-transform: capitalize;
-    text-shadow: 0 0 7px black;
+    bottom: 40px;
+  }
+  .contenedor-contacto .pu {
+    font-family: "Anton", sans-serif;
     font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px black;
+    position: relative;
+    bottom: 40px;
+    left: 30px;
   }
   .container-galeria {
     padding: 30px 10px;
@@ -441,7 +444,7 @@ footer i:hover {
     grid-template-columns: repeat(2, 280px);
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
   .container-info {
     background-color: rgba(0, 0, 0, 0.616);
     position: relative;
@@ -464,24 +467,32 @@ footer i:hover {
     height: 400px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .navbar-brand {
+    max-width: 320px;
+  }
   .contenedor-contacto h1 {
     font-size: 30px;
     position: relative;
     right: 30px;
+    top: 30px;
     padding-right: 20px;
   }
   .contenedor-contacto p {
     font-size: 20px;
     position: relative;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 10px;
   }
-  .contenedor-contacto ul li {
-    font-family: "Barlow Condensed", sans-serif;
+  .contenedor-contacto .pu {
+    font-family: "Anton", sans-serif;
+    font-size: 10px;
     color: white;
-    font-size: 17px;
-    text-shadow: 0 0 6px black;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px black;
+    position: relative;
+    left: 20px;
+    top: 10px;
   }
   aside iframe {
     width: 400px;
@@ -498,7 +509,7 @@ footer i:hover {
     height: 400px;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   .contenedor-contacto h1 {
     font-size: 20px;
     position: relative;
@@ -508,16 +519,17 @@ footer i:hover {
     font-family: "Dosis", sans-serif;
     font-size: 15px;
     position: relative;
-    right: 60px;
+    right: 50px;
+    top: 20px;
   }
-  .contenedor-contacto ul li {
-    font-family: "Barlow Condensed", sans-serif;
+  .contenedor-contacto .pu {
+    font-family: "Anton", sans-serif;
+    font-size: 10px;
     color: white;
-    font-size: 15px;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px black;
     position: relative;
-    bottom: 30px;
-    left: -50px;
-    list-style-type: none;
+    top: 20px;
   }
   aside iframe {
     width: 250px;
